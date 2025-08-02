@@ -8,8 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build && echo > dist/.nojekyll",
+    "deploy": "gh-pages -d dist",
+    "homepage": "https://INDLALATHA.github.io/react/"
   },
   "dependencies": {
     "react": "^19.1.0",
